@@ -1,2 +1,2 @@
 # secret-love-site
-Private surprise for my gf 💕
+Private surprise for the love of my life 💕
