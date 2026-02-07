@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Secret Spot 💕</title>
+    <style>
+        body {
+            background-color: #ffebee; /* Soft pink */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #e57373;
+            animation: bounce 2s infinite; /* Cute bounce animation */
+        }
+        .message {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            opacity: 0;
+            animation: fadeIn 2s forwards; /* Fade-in effect */
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-30px); }
+            60% { transform: translateY(-15px); }
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        /* Add delays for sequential fade-in */
+        .message:nth-child(1) { animation-delay: 1s; }
+        .message:nth-child(2) { animation-delay: 2s; }
+        .message:nth-child(3) { animation-delay: 3s; }
+    </style>
+</head>
+<body>
+    <h1>Welcome, My Love! 💖</h1>
+    <div class="message">Message 1: Weißt du, was mich gerade so berührt? Dass du mich nicht nur liebst, wenn alles leicht ist, sondern genau dann da bist, wenns kompliziert wird. Du bist mein sicherer Ort in einer Welt, die manchmal alles andere als sicher anfühlt. Danke, dass du mein Zuhause bist. ❤️</div>
+    <div class="message">Message 2: Manchmal liege ich einfach da und denke daran, wie unglaublich es ist, dass aus Milliarden Menschen genau du die Person bist, die mein Herz zum schneller Schlagen bringt. Nicht nur heute, sondern jeden Tag ein bisschen mehr. Du bist mein schönstes Wunder und ich will nie aufhören, das zu fühlen.</div>
+    <div class="message">Message 3: Ich liebe nicht nur, wer du bist, sondern auch wer ich bin, wenn ich bei dir bin. Ruhiger. Mutiger. Echter. Du bringst eine Version von mir zum Vorschein, die ich ohne dich vielleicht nie kennengelernt hätte. Dafür und für jeden kleinen und großen Moment mit dir, liebe ich dich über alles. 💫</div>
+
+    <script>
+        // Simple password protection (optional – remove if not needed)
+        let password = prompt("Enter our secret code to enter (hint: our anniversary date)");
+        if (password !== "29082025") { // Change to your secret code
+            alert("Oops! Try again.");
+            window.location.href = "https://www.google.com"; // Redirect away
+        }
+    </script>
+</body>
+</html>
