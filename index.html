@@ -36,6 +36,51 @@
         .message:nth-child(1) { animation-delay: 1s; }
         .message:nth-child(2) { animation-delay: 2s; }
         .message:nth-child(3) { animation-delay: 3s; }
+        /* Floating hearts – add this at the bottom of your <style> */
+
+.hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.heart {
+    position: absolute;
+    font-size: 20px;
+    color: #e57373;
+    opacity: 0;
+    animation: float-up linear infinite;
+    will-change: transform, opacity;
+}
+
+/* Customize each heart (speed, position, size, color) */
+.heart:nth-child(1)  { left: 10%; animation-duration: 12s; animation-delay: 0s;    font-size: 18px; }
+.heart:nth-child(2)  { left: 20%; animation-duration: 15s; animation-delay: 2s;    font-size: 24px; }
+.heart:nth-child(3)  { left: 30%; animation-duration: 10s; animation-delay: 1s;    font-size: 16px; color: #f06292; }
+.heart:nth-child(4)  { left: 40%; animation-duration: 18s; animation-delay: 4s;    font-size: 22px; }
+.heart:nth-child(5)  { left: 50%; animation-duration: 14s; animation-delay: 3s;    font-size: 20px; color: #ec407a; }
+.heart:nth-child(6)  { left: 60%; animation-duration: 16s; animation-delay: 5s;    font-size: 19px; }
+.heart:nth-child(7)  { left: 70%; animation-duration: 13s; animation-delay: 0.5s;  font-size: 25px; color: #d81b60; }
+.heart:nth-child(8)  { left: 80%; animation-duration: 17s; animation-delay: 6s;    font-size: 17px; }
+.heart:nth-child(9)  { left: 15%; animation-duration: 11s; animation-delay: 7s;    font-size: 21px; }
+.heart:nth-child(10) { left: 25%; animation-duration: 19s; animation-delay: 2.5s;  font-size: 23px; color: #f48fb1; }
+.heart:nth-child(11) { left: 35%; animation-duration: 12s; animation-delay: 8s;    font-size: 18px; }
+.heart:nth-child(12) { left: 45%; animation-duration: 20s; animation-delay: 1.5s;  font-size: 26px; }
+.heart:nth-child(13) { left: 55%; animation-duration: 15s; animation-delay: 9s;    font-size: 15px; color: #ad1457; }
+.heart:nth-child(14) { left: 65%; animation-duration: 14s; animation-delay: 4.5s;  font-size: 22px; }
+.heart:nth-child(15) { left: 75%; animation-duration: 16s; animation-delay: 10s;   font-size: 20px; }
+
+@keyframes float-up {
+    0%   { transform: translateY(100vh) translateX(0) rotate(0deg); opacity: 0; }
+    10%  { opacity: 0.8; }
+    50%  { transform: translateY(30vh) translateX(30px) rotate(20deg); }
+    90%  { opacity: 0.6; }
+    100% { transform: translateY(-20vh) translateX(-30px) rotate(-20deg); opacity: 0; }
+}
     </style>
 </head>
 <body>
